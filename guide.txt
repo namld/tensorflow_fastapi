@@ -1,0 +1,18 @@
+-Run docker to publish api
+docker build -t myfirstapi .
+docker run -i --name myapicontainer -p 8000:8000 myfirstapi
+
+stop container 
+docker stop container_id
+run container
+docker exec -it container_id bash
+
+
+
+-build model 
+python ann_docker_model.py
+
+--list api and call 
+http://localhost:8000/docs
+
+https://medium.com/python-data/how-to-deploy-tensorflow-2-0-models-as-an-api-service-with-fastapi-docker-128b177e81f3
